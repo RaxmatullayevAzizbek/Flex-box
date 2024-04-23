@@ -1,0 +1,17 @@
+.child {
+    padding: 20px;
+    background-color: orange;
+    border: 2px solid darkorange;
+}
+.parent {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    flex-flow: row wrap ;
+}
+.parent .child:nth-child(2) {
+    order: 1;
+}
+.parent .child:nth-child(4) {
+    order: -2;
+}
